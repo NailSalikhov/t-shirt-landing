@@ -85,6 +85,7 @@ body {
   font-family: "alegreya", Arial, sans-serif;
   color: #fff;
   font-size: 63px;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
   display: flex;
@@ -303,6 +304,9 @@ body {
   width: 1105px;
 }
 
+.site-menu {
+  margin-bottom: 125px;
+}
 .site-menu__sections {
   display: flex;
   justify-content: space-between;
@@ -342,4 +346,59 @@ body {
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
+}
+
+.extras {
+  margin-bottom: 95px;
+  display: flex;
+}
+.extras__col {
+  margin-right: 25px;
+  flex: 1;
+}
+.extras__col:last-child {
+  margin-right: 0;
+}
+.extras__best {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  background: #232323;
+  padding: 39px 10%;
+  text-decoration: none;
+  line-height: 1;
+}
+.extras__col-socials {
+  height: 100%;
+  background: url("../img/bg/pattern.png") center center/500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+}
+.socials__item {
+  margin-right: 50px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+.socials__link {
+  height: 38px;
+  width: 38px;
+  display: block;
+}
+.socials__link:hover .socials__icon {
+  fill: #d82727;
+}
+.socials__icon {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

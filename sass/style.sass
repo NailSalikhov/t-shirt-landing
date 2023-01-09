@@ -78,6 +78,7 @@ body
     font-family: "alegreya", Arial, sans-serif
     color: #fff
     font-size: 63px
+    font-weight: bold
     text-transform: uppercase
     line-height: 1
     display: flex
@@ -256,6 +257,7 @@ body
     &__container
         width: 1105px
 .site-menu
+    margin-bottom: 125px
     &__sections
         display: flex
         justify-content: space-between
@@ -284,8 +286,44 @@ body
         text-decoration: none
         display: block
         margin-bottom: 5px
-
-
-
-
+.extras
+    margin-bottom: 95px
+    display: flex
+    &__col
+        margin-right: 25px
+        &:last-child
+            margin-right: 0
+        flex: 1
+    &__best
+        font-size: 50px
+        text-align: center
+        @include title
+        color: #fff
+        display: block
+        background: #232323
+        padding: 39px 10%
+        text-decoration: none
+        line-height: 1
+    &__col-socials
+        height: 100%
+        background: url('../img/bg/pattern.png') center center/500px
+        display: flex
+        justify-content: center
+        align-items: center 
+.socials
+    display: flex
+    &__item
+        margin-right: 50px
+        &:last-child
+            margin-right: 0
+    &__link
+        height: 38px
+        width: 38px
+        display: block
+        &:hover
+            .socials__icon
+                fill: $red
+    &__icon
+        width: 100%
+        height: 100%
 
