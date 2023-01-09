@@ -1,6 +1,7 @@
 @font-face {
   font-family: "alegreya";
-  src: url("./fonts/alegreyasanssc-black-webfont.woff2") format("woff2"), url("./fonts/alegreyasanssc-black-webfont.woff") format("woff");
+  src: url("./fonts/alegreyasanssc-black-webfont.woff2") format("woff2"),
+    url("./fonts/alegreyasanssc-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -67,7 +68,8 @@ body {
   height: 100%;
 }
 .fade-slider__item {
-  background: url("../img/content/hero/slider_pic_1.png") center center/contain no-repeat;
+  background: url("../img/content/hero/slider_pic_1.png") center center/contain
+    no-repeat;
   height: 100%;
 }
 .fade-slider__text {
@@ -118,6 +120,12 @@ body {
 }
 .products__item_color-black {
   background: #232323;
+}
+.products__item_color-black .products__price {
+  border-bottom-color: #ffc92f;
+}
+.products__item_color-black .products__price-amount {
+  color: #1b1b1b;
 }
 .products__item_size-double {
   width: 630px;
@@ -220,4 +228,4 @@ body {
 }
 .filter__link:hover {
   color: #d82727;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
