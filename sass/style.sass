@@ -1,3 +1,6 @@
+*
+    box-sizing: border-box
+
 @font-face
     font-family: 'alegreya'
     src: url('./fonts/alegreyasanssc-black-webfont.woff2') format('woff2'), url('./fonts/alegreyasanssc-black-webfont.woff') format('woff')
@@ -86,6 +89,7 @@ body
             margin-left: 8px
 
 .products
+    margin-bottom: 150px
     &__list
         display: flex
         flex-wrap: wrap
@@ -193,6 +197,58 @@ body
         color:  $black
         &:hover
             color: $red
+.collections
+    margin-bottom: 135px
+    &__list
+        display: flex
+    &__item
+        min-height: 472px
+        flex: 1
+        overflow: hidden
+        background: url('../img/bg/pattern.png') center center/500px
+        position: relative
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            height: 176%
+            width: 60%
+            background: center center/contain no-repeat
+            top: -17%
+            left: -18%
+        &_type-man:before
+            background-image: url('../img/collections/collection_man.png')
+        &_type-woman:before
+            background-image: url('../img/collections/collection_woman.png')
+            width: 80%
+            top: -31%
+            left: -25%
+    &__link
+        display: block
+        padding: 74px 13% 74px 44%
+        text-decoration: none
+        color: inherit
+        font-size: 15px
+        position: relative
+        height: 100%
+        &:hover
+            .btn
+                color: #fff
+                background: $red
+    &__title
+        font-size: 70px
+        font-weight: bold
+        line-height: 1
+        text-transform: uppercase
+        // margin-top: 0
+        margin-bottom: 11px
+        font-family: $titlesfont
+    &__desc
+        margin-bottom: 28px
+
 
 
 

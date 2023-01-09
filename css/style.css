@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "alegreya";
-  src: url("./fonts/alegreyasanssc-black-webfont.woff2") format("woff2"),
-    url("./fonts/alegreyasanssc-black-webfont.woff") format("woff");
+  src: url("./fonts/alegreyasanssc-black-webfont.woff2") format("woff2"), url("./fonts/alegreyasanssc-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -68,8 +71,7 @@ body {
   height: 100%;
 }
 .fade-slider__item {
-  background: url("../img/content/hero/slider_pic_1.png") center center/contain
-    no-repeat;
+  background: url("../img/content/hero/slider_pic_1.png") center center/contain no-repeat;
   height: 100%;
 }
 .fade-slider__text {
@@ -102,6 +104,9 @@ body {
   margin-left: 8px;
 }
 
+.products {
+  margin-bottom: 150px;
+}
 .products__list {
   display: flex;
   flex-wrap: wrap;
@@ -228,4 +233,65 @@ body {
 }
 .filter__link:hover {
   color: #d82727;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.collections {
+  margin-bottom: 135px;
+}
+.collections__list {
+  display: flex;
+}
+.collections__item {
+  min-height: 472px;
+  flex: 1;
+  overflow: hidden;
+  background: url("../img/bg/pattern.png") center center/500px;
+  position: relative;
+  margin-right: 30px;
+}
+.collections__item:last-child {
+  margin-right: 0;
+}
+.collections__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 176%;
+  width: 60%;
+  background: center center/contain no-repeat;
+  top: -17%;
+  left: -18%;
+}
+.collections__item_type-man:before {
+  background-image: url("../img/collections/collection_man.png");
+}
+.collections__item_type-woman:before {
+  background-image: url("../img/collections/collection_woman.png");
+  width: 80%;
+  top: -31%;
+  left: -25%;
+}
+.collections__link {
+  display: block;
+  padding: 74px 13% 74px 44%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  position: relative;
+  height: 100%;
+}
+.collections__link:hover .btn {
+  color: #fff;
+  background: #d82727;
+}
+.collections__title {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+}
+.collections__desc {
+  margin-bottom: 28px;
+}/*# sourceMappingURL=style.css.map */
