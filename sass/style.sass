@@ -94,6 +94,69 @@ body
         &:nth-child(2n)
             margin-left: 8px
 
+.sidebar
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    width: 75px
+    background-color: #212121
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__header
+        position: absolute
+        top: 29px
+        left: 0
+        right: 0
+        display: none
+        justify-content: center
+    &__close-icon
+        width: 29px
+        height: 29px
+        fill: $yellow
+    &__close
+        position: absolute
+        top: -4px
+        right: 23px
+    &_opened
+        width: 325px
+        padding: 0 3% 0 4%
+        .sidebar__header
+            display: flex
+        .sidebar__menu
+            left: 0
+            text-align: center
+            width: 100%
+        .sidebar__hamburger
+            display: none
+    &__menu
+        position: absolute
+        left: -400px
+    &__hamburger-icon
+        width: 29px
+        height: 29px
+        fill: $yellow
+    &__hamburger
+        display: block
+        position: absolute
+        top: 27px
+        left: 50%
+        transform: translate(-50%)
+
+.side-menu
+    &__link
+        font-size: 20px
+        text-transform: uppercase
+        text-decoration: none
+        color: $yellow
+        font-family: $titlesfont
+        &:hover
+            color: $red
+    &__item
+        margin-bottom: 20px
+
 .products
     margin-bottom: 150px
     &__list

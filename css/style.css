@@ -105,6 +105,82 @@ body {
   margin-left: 8px;
 }
 
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 75px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar__header {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+}
+.sidebar__close-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffc92f;
+}
+.sidebar__close {
+  position: absolute;
+  top: -4px;
+  right: 23px;
+}
+.sidebar_opened {
+  width: 325px;
+  padding: 0 3% 0 4%;
+}
+.sidebar_opened .sidebar__header {
+  display: flex;
+}
+.sidebar_opened .sidebar__menu {
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.sidebar_opened .sidebar__hamburger {
+  display: none;
+}
+.sidebar__menu {
+  position: absolute;
+  left: -400px;
+}
+.sidebar__hamburger-icon {
+  width: 29px;
+  height: 29px;
+  fill: #ffc92f;
+}
+.sidebar__hamburger {
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.side-menu__link {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffc92f;
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+}
+.side-menu__link:hover {
+  color: #d82727;
+}
+.side-menu__item {
+  margin-bottom: 20px;
+}
+
 .products {
   margin-bottom: 150px;
 }
