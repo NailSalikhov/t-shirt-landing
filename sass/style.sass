@@ -66,14 +66,41 @@ body
 .fade-slider
     width: 100%
     height: 100%
+    position: relative
     &__item
-        background: url('../img/content/hero/slider_pic_1.png') center center / contain no-repeat
+        background: center center / contain no-repeat
         height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        &_visible
+            opacity: 1
+        &_style-tshirts
+            background-image: url('../img/content/hero/slider_pic_1.png')
+            .fade-slider__text
+                left: 50%
+                top: 50%
+                transform: translate(-164%,-52%)
+        &_style-games
+            background-image: url('../img/content/hero/slider_pic_2.png')
+            .fade-slider__text
+                left: 50%
+                bottom: 0
+                transform: translateX(-50%)
+            .lined-text
+                align-items: center
+        &_style-presents
+            background-image: url('../img/content/hero/slider_pic_3.png')
+            .fade-slider__text
+                left: 0
+                bottom: 0
+                transform: translateY(-120%)
+            .lined-text
+                align-items: center
     &__text
         position: absolute
-        left: 50%
-        top: 50%
-        transform: translate(-164%,-52%)
 .lined-text
     font-family: "alegreya", Arial, sans-serif
     color: #fff
@@ -89,10 +116,13 @@ body
         background: $black
         padding: 0 17px 8px
         margin-top: -7px
+        white-space: nowrap
         &_yellow
             color: $yellow
         &:nth-child(2n)
             margin-left: 8px
+    &_no-indent
+
 
 .sidebar
     position: absolute
@@ -105,6 +135,7 @@ body
     flex-direction: column
     justify-content: center
     align-items: center
+    transition: width .3s
     &__header
         position: absolute
         top: 29px
@@ -129,11 +160,13 @@ body
             left: 0
             text-align: center
             width: 100%
+            transition-delay: .1s
         .sidebar__hamburger
             display: none
     &__menu
         position: absolute
         left: -400px
+        transition: left .3s
     &__hamburger-icon
         width: 29px
         height: 29px
