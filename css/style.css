@@ -79,6 +79,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
+  transition: opacity 0.3s;
 }
 .fade-slider__item_visible {
   opacity: 1;
